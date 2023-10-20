@@ -11,7 +11,7 @@ public class User implements Serializable {
 
     private String Name;
     private String Mail;
-    private Integer Phone;
+    private String Phone;
     private String Password;
     private String Street;
     private String State;
@@ -23,7 +23,7 @@ public class User implements Serializable {
 
     }
 
-    public User(String Name, String Mail, Integer Phone, String Password, String Street, String State, String City, String Country, Integer Zip) {
+    public User(String Name, String Mail, String Phone, String Password, String Street, String State, String City, String Country, Integer Zip) {
         this.Name = Name;
         this.Mail = Mail;
         this.Phone = Phone;
@@ -51,11 +51,11 @@ public class User implements Serializable {
         this.Mail = Mail;
     }
 
-    public Integer getPhone() {
+    public String getPhone() {
         return Phone;
     }
 
-    public void setPhone(Integer Phone) {
+    public void setPhone(String Phone) {
         this.Phone = Phone;
     }
 
