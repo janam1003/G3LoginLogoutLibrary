@@ -13,25 +13,19 @@ public class User implements Serializable {
     private String Mail;
     private String Phone;
     private String Password;
-    private String Street;
-    private String State;
-    private String City;
-    private String Country;
+    private String Address;
     private Integer Zip;
 
     public User() {
 
     }
 
-    public User(String Name, String Mail, String Phone, String Password, String Street, String State, String City, String Country, Integer Zip) {
+    public User(String Name, String Mail, String Phone, String Password, String Address, Integer Zip) {
         this.Name = Name;
         this.Mail = Mail;
         this.Phone = Phone;
         this.Password = Password;
-        this.Street = Street;
-        this.State = State;
-        this.City = City;
-        this.Country = Country;
+        this.Address = Address;
         this.Zip = Zip;
     }
 
@@ -67,36 +61,12 @@ public class User implements Serializable {
         this.Password = Password;
     }
 
-    public String getStreet() {
-        return Street;
+    public String getAddress() {
+        return Address;
     }
 
-    public void setStreet(String Street) {
-        this.Street = Street;
-    }
-
-    public String getState() {
-        return State;
-    }
-
-    public void setState(String State) {
-        this.State = State;
-    }
-
-    public String getCity() {
-        return City;
-    }
-
-    public void setCity(String City) {
-        this.City = City;
-    }
-
-    public String getCountry() {
-        return Country;
-    }
-
-    public void setCountry(String Country) {
-        this.Country = Country;
+    public void setAddress(String Address) {
+        this.Address = Address;
     }
 
     public Integer getZip() {
@@ -109,7 +79,7 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User{" + "Name=" + Name + ", Mail=" + Mail + ", Phone=" + Phone + ", Password=" + Password + ", Street=" + Street + ", State=" + State + ", City=" + City + ", Country=" + Country + ", Zip=" + Zip + '}';
+        return "User{" + "Name=" + Name + ", Mail=" + Mail + ", Phone=" + Phone + ", Password=" + Password + ", Address=" + Address + ", Zip=" + Zip + '}';
     }
 
 }
