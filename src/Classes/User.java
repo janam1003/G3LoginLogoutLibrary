@@ -16,6 +16,7 @@ public class User implements Serializable {
     private String Address;
     private Integer Zip;
 
+    // Constructor
     public User() {
 
     }
@@ -29,6 +30,7 @@ public class User implements Serializable {
         this.Zip = Zip;
     }
 
+    // Getters And Setters
     public String getName() {
         return Name;
     }
@@ -77,6 +79,7 @@ public class User implements Serializable {
         this.Zip = Zip;
     }
 
+    // To String
     @Override
     public String toString() {
         return "User{" + "Name=" + Name + ", Mail=" + Mail + ", Phone=" + Phone + ", Password=" + Password + ", Address=" + Address + ", Zip=" + Zip + '}';
