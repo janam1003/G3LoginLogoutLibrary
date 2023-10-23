@@ -2,6 +2,7 @@ package Classes;
 
 import Exceptions.EmailAlreadyExistException;
 import Exceptions.IncorrectLoginException;
+import Exceptions.MaxUserException;
 import Exceptions.ServerErrorException;
 import Exceptions.UnknownTypeException;
 
@@ -27,7 +28,7 @@ public interface SigninSignup {
      * @throws UnknownTypeException If an unknown or unexpected error occurs
      * during signIn.
      */
-    public User SignIn(User user) throws IncorrectLoginException, ServerErrorException, UnknownTypeException;
+    public User SignIn(User user) throws IncorrectLoginException, ServerErrorException, UnknownTypeException, MaxUserException;
 
     /**
      * Method for user sign-up.
@@ -44,6 +45,6 @@ public interface SigninSignup {
      * @throws UnknownTypeException If an unknown or unexpected error occurs
      * during signUp.
      */
-    public User signUp(User user) throws ServerErrorException, EmailAlreadyExistException, UnknownTypeException;
+    public User signUp(User user) throws ServerErrorException, EmailAlreadyExistException, UnknownTypeException, MaxUserException;
 
 }
