@@ -27,6 +27,8 @@ public interface SigninSignup {
      *
      * @throws UnknownTypeException If an unknown or unexpected error occurs
      * during signIn.
+     * 
+     *  @throws MaxUserException If the maximum number of users is reached.
      */
     public User SignIn(User user) throws IncorrectLoginException, ServerErrorException, UnknownTypeException, MaxUserException;
 
@@ -44,6 +46,8 @@ public interface SigninSignup {
      *
      * @throws UnknownTypeException If an unknown or unexpected error occurs
      * during signUp.
+     * 
+     *  @throws MaxUserException If the maximum number of users is reached.
      */
     public User signUp(User user) throws ServerErrorException, EmailAlreadyExistException, UnknownTypeException, MaxUserException;
 
