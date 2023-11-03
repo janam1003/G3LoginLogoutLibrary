@@ -1,11 +1,13 @@
 package Classes;
 
+import java.io.Serializable;
+
 /**
  * Enumeration 'MessageType' to represent different types of messages.
  *
  * @author Janam
  */
-public enum MessageType {
+public enum MessageType implements Serializable {
 
     LOGIN_REQUEST,
     SIGNUP_REQUEST,
